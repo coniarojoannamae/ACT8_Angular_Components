@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <style>
+    #counterDisplay {
+      margin-top: 20px;
+      font-size: 24px;
+      color: darkorange;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Counter</h2>
+<input type="number" placeholder="Increase Counter" [(ngModel)]="number">
+
+<button type="button" (click)="show()" >Click</button>
+<h2>{{result}}</h2>
+
+</body>
+</html>

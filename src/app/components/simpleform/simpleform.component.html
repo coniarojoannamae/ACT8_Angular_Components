@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <style>
+    #submittedData {
+      margin-top: 20px;
+      font-size: 18px;
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Simple Form</h1>
+  <label>Name:</label><br>
+  <input type="text" placeholder="Enter your name" [(ngModel)]="name"><br>
+
+  <label>Email:</label><br>
+  <input type="email" placeholder="Enter your email" [(ngModel)]="email"><br><br>
+
+  <button type="button" (click)="show()">Submit</button>
+
+<h3>Your name is {{resultName}}. </h3>
+<h3>Your email is {{resultEmail}}.</h3>
+
+
+</body>
+</html>

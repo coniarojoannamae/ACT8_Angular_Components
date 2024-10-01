@@ -7,10 +7,12 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppComponent} from "./app.component";
 import {provideAnimationsAsync} from "@angular/platform-browser/animations/async";
 import {DisplayhellowolrdComponent} from "./components/displayhellowolrd/displayhellowolrd.component";
+import {ShowhellobuttonComponent} from "./components/showhellobutton/showhellobutton.component";
 
 
 const routes: Routes = [
   { path: 'displayhelloworld', component: DisplayhellowolrdComponent },
+  { path: 'showhellobutton', component: ShowhellobuttonComponent },
 ];
 
 @NgModule({
@@ -23,7 +25,8 @@ const routes: Routes = [
 
   declarations: [
     AppComponent,
-    DisplayhellowolrdComponent
+    DisplayhellowolrdComponent,
+    ShowhellobuttonComponent
   ],
 
   bootstrap: [

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Hello Button</title>
+  <style>
+    #helloMessage {
+      margin-top: 20px;
+      font-size: 24px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+<button id="showHelloButton">Show Hello Button</button>
+<div id="helloMessage"></div>
+
+<script>
+  document.getElementById('showHelloButton').addEventListener('click', function() {
+    document.getElementById('helloMessage').textContent = 'Hello World';
+  });
+</script>
+
+</body>
+</html>

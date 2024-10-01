@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Name</title>
+  <style>
+    #nameDisplay {
+      margin-top: 20px;
+      font-size: 24px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Enter Your Name</h2>
+
+<input type="text" placeholder="Type your name here" [(ngModel)]="name">
+
+<button type="button" (click)="show()" >Display Name</button>
+<h2>{{result}}</h2>
+
+</body>
+</html>

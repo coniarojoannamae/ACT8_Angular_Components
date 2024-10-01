@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Greeting</title>
+  <style>
+    #greetingDisplay {
+      margin-top: 20px;
+      font-size: 24px;
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <label for="name">Enter your name: </label><br>
+  <input type="text" id="name" [(ngModel)]="name" name="name" required>
+  <button type="button" (click)="show()">Generate</button>
+</div>
+
+<div *ngIf="greeting">
+  <p [innerHTML]="greeting"></p>
+</div>
+
+</body>
+</html>

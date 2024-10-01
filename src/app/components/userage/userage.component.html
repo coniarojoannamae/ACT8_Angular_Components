@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Age</title>
+  <style>
+    #ageDisplay {
+      margin-top: 20px;
+      font-size: 24px;
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <label for="birthYear">Birth year: </label><br>
+  <input type="number" id="birthYear" [(ngModel)]="birthYear">
+  <button type="button" (click)="calculateAge()">Submit</button>
+</div>
+
+<div *ngIf="age !== null">
+  <p>Age: {{ age }} <sup>yrs</sup> Old</p>
+</div>
+</body>
+</html>

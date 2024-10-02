@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <style>
+    #resultDisplay {
+      margin-top: 20px;
+      font-size: 24px;
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+   <h1>Simple Calculator</h1>
+   <label>Number 1:</label><br>
+   <input type="number"  placeholder="Input Number1" [(ngModel)]="num1" ><br><br>
+   <label>Number 2:</label><br>
+   <input type="number"  placeholder="Input Number2" [(ngModel)]="num2" ><br><br>
+
+   <button type="button" (click)="showAdd()">Add</button>
+   <button type="button" (click)="showSubtract()">Subtract</button>
+   <button type="button" (click)="showMultiply()">Multiply</button>
+   <button type="button" (click)="showDivide()">Divide</button>
+
+   <div>Total: {{resultDisplay}}</div>
+
+</body>
+</html>

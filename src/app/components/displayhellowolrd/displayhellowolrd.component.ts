@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './displayhellowolrd.component.css'
 })
 export class DisplayhellowolrdComponent {
-
+   result: string = "Hello World!";
 }

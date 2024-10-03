@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palindrome Checker</title>
+</head>
+<body>
+<div>
+  <h2>Palindrome Checker</h2>
+  <input type="text" id="wordInput"  placeholder="Enter a word " [(ngModel)]="word" />
+  <button (click)="checkPalindrome()">Check Palindrome</button><br><br>
+
+  <p *ngIf="isPalindrome === true">Yes, "{{ word }}" is a palindrome!</p>
+  <p *ngIf="isPalindrome === false">No, "{{ word }}" is not a palindrome.</p>
+</div>
+
+
+</body>
+</html>

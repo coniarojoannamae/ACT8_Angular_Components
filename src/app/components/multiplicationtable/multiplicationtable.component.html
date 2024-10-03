@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table</title>
+</head>
+<body>
+<div>
+  <h2>Multiplication Table Generator</h2>
+  <input type="number" placeholder="Enter a number"  [(ngModel)]="number" />
+
+  <button (click)="generateTable()">Generate Table</button>
+
+  <ul *ngIf="multiplicationTable.length > 0">
+    <li *ngFor="let value of multiplicationTable; let i = index">
+      {{ number }} x {{ i + 1 }} = {{ value }}
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

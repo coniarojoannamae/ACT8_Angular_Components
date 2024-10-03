@@ -8,18 +8,17 @@
 <body>
 <div>
   <h2>Random Number Generator</h2>
-
   <label>Minimum:</label><br>
-  <input type="number" placeholder="Enter a number" [(ngModel)]="min" /><br><br>
-
+  <input type="number" placeholder="Enter the Minimum number" [(ngModel)]="min" /><br><br>
   <label>Maximum:</label><br>
-  <input type="number" placeholder="Enter a number" [(ngModel)]="max" /><br><br>
+  <input type="number" placeholder=" Enter the Maximum number" [(ngModel)]="max" /><br><br>
 
   <button (click)="generateRandomNumber()">Generate Random Number</button><br>
 
   <p *ngIf="randomNumber !== null">Random Number: {{ randomNumber }}</p>
   <p *ngIf="(min !== null && max !== null && min >= max)">Please ensure minimum is less than maximum.</p>
 </div>
+
 
 </body>
 </html>

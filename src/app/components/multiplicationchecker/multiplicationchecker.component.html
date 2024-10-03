@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Checker</title>
+</head>
+<body>
+<div>
+  <h2>Multiplication Checker</h2>
+
+  <label>Enter the first number:</label><br>
+  <input type="number" placeholder="Enter the first number" [(ngModel)]="number1" /><br><br>
+
+  <label>Enter the second number:</label><br>
+  <input type="number" placeholder="Enter the second number" [(ngModel)]="number2" /><br>
+
+  <button (click)="checkMultiple()">Check Multiple</button><br>
+
+  <p>{{ message }}</p>
+</div>
+
+</body>
+</html>
+

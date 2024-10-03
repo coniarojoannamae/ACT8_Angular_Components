@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmark List</title>
+</head>
+<body>
+<div>
+  <h2>Bookmark List</h2>
+
+  <label>Enter URL:</label><br>
+  <input type="text" [(ngModel)]="bookmark" placeholder="https://example.com" />
+  <button (click)="addBookmark()">Add Bookmark</button><br><br>
+
+  <ul>
+    <li *ngFor="let url of bookmarks">
+      <a [href]="url" target="_blank">{{ url }}</a>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>

@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiplication Table</title>
+  <title>BMultiplication Table </title>
 </head>
 <body>
 <div>
   <h2>Multiplication Table Generator</h2>
-  <input type="number" placeholder="Enter a number"  [(ngModel)]="number" />
-
-  <button (click)="generateTable()">Generate Table</button>
+  <input type="number" placeholder="Enter a number" [(ngModel)]="number" />
+  <button (click)="generateTable()">Generate Table</button><br><br>
 
   <ul *ngIf="multiplicationTable.length > 0">
     <li *ngFor="let value of multiplicationTable; let i = index">

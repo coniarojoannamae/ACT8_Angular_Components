@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+</head>
+<body>
+<div>
+  <h2>Temperature Converter</h2>
+  <div>
+    <label>Celsius:</label><br>
+    <input type="number" placeholder="Enter the Celsius" [(ngModel)]="celsius" (input)="convertToFahrenheit()" /><br><br>
+    <label>Fahrenheit:</label><br>
+    <input type="number" placeholder="Enter the Fahrenheit" [(ngModel)]="fahrenheit" (input)="convertToCelsius()" />
+  </div>
+
+  <div>
+    <p *ngIf="celsius !== null">Converted to Fahrenheit: {{ fahrenheit | number: '1.2-2' }}°F</p>
+    <p *ngIf="fahrenheit !== null">Converted to Celsius: {{ celsius | number: '1.2-2' }}°C</p>
+  </div>
+</div>
+
+</body>
+</html>

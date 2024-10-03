@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do Manager</title>
+</head>
+<body>
+<div>
+  <h2>To-Do Manager</h2>
+  <label>Add a task:</label><br>
+  <input type="text" placeholder="Add a task" [(ngModel)]="task" />
+  <button (click)="addTask()">Add Task</button><br><br>
+  <ul>
+    <li *ngFor="let task of todoList; let i = index">
+      {{ task }} <button (click)="removeTask(i)">Remove</button>
+    </li>
+  </ul>
+</div>
+</body>
+</html>

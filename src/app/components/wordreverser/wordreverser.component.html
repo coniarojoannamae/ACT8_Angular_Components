@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Greeting</title>
+</head>
+<body>
+<div>
+  <h2>Word Reverser</h2>
+  <input type="text"  placeholder="Enter a word" [(ngModel)]="inputWord" />
+
+  <button (click)="reverseWord()">Reverse Word</button>
+
+  <p *ngIf="reversedWord">Reversed Word: {{ reversedWord }}</p>
+</div>
+</body>
+</html>
+

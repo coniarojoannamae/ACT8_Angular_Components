@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Current Date and Time</title>
+</head>
+<body>
+<div>
+  <h2>Show Current Date and Time</h2>
+  <button (click)="showDateTime()">Show Date and Time</button>
+  <p *ngIf="currentDateTime">Current Date and Time: {{ currentDateTime }}</p>
+</div>
+</body>
+</html>

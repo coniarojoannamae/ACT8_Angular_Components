@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>>BMI Solver</title>
+</head>
+<body>
+<div>
+  <h2>BMI Solver</h2>
+  <label>Weight (kg):</label><br>
+  <input type="number" placeholder="Enter your Weight" [(ngModel)]="weight" /><br><br>
+
+  <label>Height (m):</label><br>
+  <input type="number" placeholder="Enter your Height" [(ngModel)]="height" step="0.01" /><br><br>
+
+  <button (click)="calculateBMI()">Calculate BMI</button><br>
+
+  <p *ngIf="bmi !== null">Your BMI: {{ bmi }}</p>
+  <p *ngIf="message">{{ message }}</p>
+</div>
+
+</body>
+</html>
+

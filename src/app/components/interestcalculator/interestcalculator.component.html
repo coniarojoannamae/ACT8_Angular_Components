@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interest Calculator</title>
+</head>
+<body>
+<div>
+  <h2>Simple Interest Calculator</h2>
+  <label>Principal (₱):</label><br>
+  <input type="number" placeholder="Enter the Principal" [(ngModel)]="principal" /><br>
+
+  <label>Rate of Interest (%):</label><br>
+  <input type="number" placeholder="Enter the rate Interest" [(ngModel)]="rate" /><br>
+
+  <label>Time (years):</label><br>
+  <input type="number" placeholder="Set the time" [(ngModel)]="time" /><br><br>
+
+  <button (click)="calculateInterest()">Calculate Interest</button>
+
+  <p *ngIf="interest !== null">Simple Interest: ₱{{ interest }}</p>
+  <p *ngIf="totalAmount !== null">Total Amount: ₱{{ totalAmount }}</p>
+</div>
+
+
+
+</body>
+</html>
+

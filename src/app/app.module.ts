@@ -47,6 +47,7 @@ import {OddsumcalculatorComponent} from "./components/oddsumcalculator/oddsumcal
 import {CurrencyformatterComponent} from "./components/currencyformatter/currencyformatter.component";
 import {RandomquotedisplayComponent} from "./components/randomquotedisplay/randomquotedisplay.component";
 import {UppercasegreetingComponent} from "./components/uppercasegreeting/uppercasegreeting.component";
+import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisiblechecker.component";
 
 
 const routes: Routes = [
@@ -89,6 +90,7 @@ const routes: Routes = [
   { path: 'currencyformatter', component: CurrencyformatterComponent },
   { path: 'randomquotedisplay', component: RandomquotedisplayComponent },
   { path: 'uppercasegreeting', component: UppercasegreetingComponent },
+  { path: 'divisiblechecker', component: DivisiblecheckerComponent },
 
 
 ];
@@ -142,7 +144,8 @@ const routes: Routes = [
     OddsumcalculatorComponent,
     CurrencyformatterComponent,
     RandomquotedisplayComponent,
-    UppercasegreetingComponent
+    UppercasegreetingComponent,
+    DivisiblecheckerComponent
   ],
 
   bootstrap: [

@@ -51,6 +51,7 @@ import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisible
 import {PrimecheckerComponent} from "./components/primechecker/primechecker.component";
 import {LeapyearcheckerComponent} from "./components/leapyearchecker/leapyearchecker.component";
 import {VowelscounterComponent} from "./components/vowelscounter/vowelscounter.component";
+import {SquarerootcalculatorComponent} from "./components/squarerootcalculator/squarerootcalculator.component";
 
 
 const routes: Routes = [
@@ -97,6 +98,7 @@ const routes: Routes = [
   { path: 'primechecker', component: PrimecheckerComponent },
   { path: 'leapyearchecker', component: LeapyearcheckerComponent },
   { path: 'vowelscounter', component: VowelscounterComponent },
+  { path: 'squarerootcalculator', component: SquarerootcalculatorComponent },
 
 
 
@@ -157,6 +159,7 @@ const routes: Routes = [
     PrimecheckerComponent,
     LeapyearcheckerComponent,
     VowelscounterComponent,
+    SquarerootcalculatorComponent,
 
   ],
 

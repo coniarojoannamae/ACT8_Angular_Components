@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Formatter</title>
+</head>
+<body>
+<div>
+  <h2>Currency Formatter</h2>
+  <label>Enter a number:</label><br>
+  <input type="number" placeholder="Enter a number" [(ngModel)]="numberInput" /><br><br>
+
+  <label>Select Currency:</label><br>
+  <select [(ngModel)]="selectedCurrency">
+    <option value="USD">Dollar (USD)</option>
+    <option value="PHP">Philippine Peso (PHP)</option>
+    <option value="EUR">Euro (EUR)</option>
+  </select><br><br>
+
+  <button (click)="formatCurrency()">Format as Currency</button><br><br>
+
+  <p *ngIf="formattedCurrency">Formatted Currency: {{ formattedCurrency }}</p>
+</div>
+
+
+</body>
+</html>
+

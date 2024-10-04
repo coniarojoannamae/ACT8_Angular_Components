@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+</head>
+<body>
+<div>
+  <h2>Grade Calculator</h2>
+  <label>Enter grade (0-100):</label>
+  <input type="number" placeholder="Enter grade" #gradeInput min="0" max="100" /><br><br>
+  <button (click)="addGrade(gradeInput.value); gradeInput.value = ''">Add Grade</button>
+  <button (click)="calculateAverage()">Calculate Average</button>
+  <button (click)="resetGrades()">Reset</button><br>
+
+  <p *ngIf="averageGrade !== null">Average Grade: {{ averageGrade.toFixed(2) }}</p>
+  <p *ngIf="finalGrade">Final Grade: {{ finalGrade }}</p>
+</div>
+</body>
+</html>
+

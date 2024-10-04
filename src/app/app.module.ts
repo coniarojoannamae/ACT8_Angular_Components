@@ -49,6 +49,7 @@ import {RandomquotedisplayComponent} from "./components/randomquotedisplay/rando
 import {UppercasegreetingComponent} from "./components/uppercasegreeting/uppercasegreeting.component";
 import {DivisiblecheckerComponent} from "./components/divisiblechecker/divisiblechecker.component";
 import {PrimecheckerComponent} from "./components/primechecker/primechecker.component";
+import {LeapyearcheckerComponent} from "./components/leapyearchecker/leapyearchecker.component";
 
 
 const routes: Routes = [
@@ -93,6 +94,8 @@ const routes: Routes = [
   { path: 'uppercasegreeting', component: UppercasegreetingComponent },
   { path: 'divisiblechecker', component: DivisiblecheckerComponent},
   { path: 'primechecker', component: PrimecheckerComponent },
+  { path: 'leapyearchecker', component: LeapyearcheckerComponent },
+
 
 
 
@@ -150,6 +153,7 @@ const routes: Routes = [
     UppercasegreetingComponent,
     DivisiblecheckerComponent,
     PrimecheckerComponent,
+    LeapyearcheckerComponent,
   ],
 
   bootstrap: [

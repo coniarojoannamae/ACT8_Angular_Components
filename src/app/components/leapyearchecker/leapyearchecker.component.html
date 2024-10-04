@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leap Year Checker</title>
+</head>
+<body>
+<div>
+  <h2>Leap Year Checker</h2>
+  <input type="number" placeholder="Enter a year" [(ngModel)]="year" />
+  <button (click)="checkLeapYear()">Check Leap Year</button><br>
+
+  <p *ngIf="resultMessage">{{ resultMessage }}</p>
+</div>
+
+</body>
+</html>
+

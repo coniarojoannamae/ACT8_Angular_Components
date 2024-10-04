@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odd Sum Calculator</title>
+</head>
+<body>
+<div>
+  <h2>Odd Sum Calculator</h2>
+  <label>Enter a number:</label><br>
+  <input type="number" placeholder="Enter a number" [(ngModel)]="number" />
+  <button (click)="calculateOddSum()">Calculate Sum of Odd Numbers</button>
+
+  <p *ngIf="oddSum !== null">Sum of odd numbers up to {{ number }}: {{ oddSum }}</p>
+</div>
+
+</body>
+</html>
+

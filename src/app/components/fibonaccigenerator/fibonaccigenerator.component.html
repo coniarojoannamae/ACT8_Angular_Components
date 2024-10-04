@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fibonacci Generator</title>
+</head>
+<body>
+<div>
+  <h2>Fibonacci Generator</h2>
+  <label>Enter N (number of Fibonacci numbers):</label><br>
+  <input type="number" placeholder="Enter the Fibonacci numbers)" [(ngModel)]="count" />
+  <button (click)="generateFibonacci()">Generate Fibonacci Sequence</button><br>
+
+  <div *ngIf="fibonacciSequence.length > 0">
+    <h3>Fibonacci Sequence:</h3>
+    <ul>
+      <li *ngFor="let number of fibonacciSequence">{{ number }}</li>
+    </ul>
+  </div>
+</div>
+
+
+</body>
+</html>
+

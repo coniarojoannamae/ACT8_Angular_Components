@@ -42,6 +42,7 @@ import {InterestcalculatorComponent} from "./components/interestcalculator/inter
 import {
   CompoundinterestcalculatorComponent
 } from "./components/compoundinterestcalculator/compoundinterestcalculator.component";
+import {FibonaccigeneratorComponent} from "./components/fibonaccigenerator/fibonaccigenerator.component";
 
 
 const routes: Routes = [
@@ -79,6 +80,8 @@ const routes: Routes = [
   { path: 'usernamevalidator', component: UsernamevalidatorComponent },
   { path: 'interestcalculator', component: InterestcalculatorComponent },
   { path: 'compoundinterestcalculator', component: CompoundinterestcalculatorComponent },
+  { path: 'fibonaccigenerator', component: FibonaccigeneratorComponent },
+
 
 
 ];
@@ -128,6 +131,7 @@ const routes: Routes = [
     UsernamevalidatorComponent,
     InterestcalculatorComponent,
     CompoundinterestcalculatorComponent,
+    FibonaccigeneratorComponent,
   ],
 
   bootstrap: [

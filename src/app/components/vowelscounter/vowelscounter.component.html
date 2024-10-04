@@ -7,13 +7,11 @@
 </head>
 <body>
 <div>
-  <h2>Leap Year Checker</h2>
-  <input type="number" placeholder="Enter a year" [(ngModel)]="year" />
-  <button (click)="checkLeapYear()">Check Leap Year</button><br>
-
+  <h2>Vowels Counter</h2>
+  <input type="text" placeholder="Enter a string:" [(ngModel)]="inputString" />
+  <button (click)="countVowels()">Count Vowels</button><br><br>
   <p *ngIf="resultMessage">{{ resultMessage }}</p>
 </div>
-
 </body>
 </html>
 

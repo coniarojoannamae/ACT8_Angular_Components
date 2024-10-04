@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compound Interest Calculator</title>
+</head>
+<body>
+<div>
+  <div>
+    <h2>Compound Interest Calculator</h2>
+
+    <label>Principal (₱):</label><br>
+    <input type="number" placeholder="Enter the Principal" [(ngModel)]="principal" /><br><br>
+
+    <label>Rate of Interest (%):</label><br>
+    <input type="number" placeholder="Enter the Rate Interest" [(ngModel)]="rate" /><br><br>
+
+    <label>Time (years):</label><br>
+    <input type="number" placeholder="Set the time" [(ngModel)]="time" /><br><br>
+
+    <label>Compounding Frequency (e.g., 1 for yearly, 4 for quarterly):</label><br>
+    <input type="number" placeholder="Compounding Frequency"  [(ngModel)]="frequency" /><br><br>
+
+    <button (click)="calculateCompoundInterest()">Calculate Compound Interest</button><br><br>
+
+    <p *ngIf="compoundInterest !== null">Compound Interest: ₱{{ compoundInterest }}</p>
+    <p *ngIf="totalAmount !== null">Total Amount: ₱{{ totalAmount }}</p>
+  </div>
+</div>
+
+</body>
+</html>
+

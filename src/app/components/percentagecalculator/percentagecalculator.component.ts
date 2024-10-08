@@ -9,7 +9,6 @@ export class PercentagecalculatorComponent {
   value: number = 0;
   total: number = 0;
   percentage: number | null = null;
-
   calculatePercentage(): void {
     if (this.total > 0) {
       this.percentage = (this.value / this.total) * 100;

@@ -1,1 +1,28 @@
-<p>percentagecalculator works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Percentage Calculator</title>
+</head>
+<body>
+<div class="percentage-calculator">
+  <h3>Percentage Calculator</h3>
+  <label for="value">Enter a value:</label><br>
+  <input type="number" id="value" [(ngModel)]="value" /><br>
+  <label for="total">Enter the total:</label><br>
+  <input type="number" id="total" [(ngModel)]="total" /><br>
+
+  <button (click)="calculatePercentage()">Calculate</button><br><br>
+
+  <div *ngIf="percentage !== null">
+    <h4>Result: {{ percentage | number: '1.2-2' }}%</h4>
+  </div>
+
+  <div *ngIf="percentage === null && total <= 0">
+    <p>Please enter a valid total greater than zero.</p>
+  </div>
+</div>
+
+</body>
+</html>

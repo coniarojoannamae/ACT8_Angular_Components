@@ -53,6 +53,7 @@ import {LeapyearcheckerComponent} from "./components/leapyearchecker/leapyearche
 import {VowelscounterComponent} from "./components/vowelscounter/vowelscounter.component";
 import {SquarerootcalculatorComponent} from "./components/squarerootcalculator/squarerootcalculator.component";
 import {GradecalculatorComponent} from "./components/gradecalculator/gradecalculator.component";
+import {PercentagecalculatorComponent} from "./components/percentagecalculator/percentagecalculator.component";
 
 
 const routes: Routes = [
@@ -101,6 +102,7 @@ const routes: Routes = [
   { path: 'vowelscounter', component: VowelscounterComponent },
   { path: 'squarerootcalculator', component: SquarerootcalculatorComponent },
   { path: 'gradecalculator', component: GradecalculatorComponent },
+  { path: 'percentagecalculator', component: PercentagecalculatorComponent },
 
 
 ];
@@ -161,6 +163,7 @@ const routes: Routes = [
     VowelscounterComponent,
     SquarerootcalculatorComponent,
     GradecalculatorComponent,
+    PercentagecalculatorComponent,
 
   ],
 

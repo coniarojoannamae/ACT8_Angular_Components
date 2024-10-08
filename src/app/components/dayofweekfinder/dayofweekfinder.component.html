@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day of the Week Finde</title>
+</head>
+<body>
+<div class="day-of-week-finder">
+  <h3>Day of the Week Finder</h3>
+
+  <label for="date">Enter a date:</label>
+  <input type="date" id="date" [(ngModel)]="selectedDate" />
+
+  <button (click)="findDayOfWeek()">Find Day</button>
+
+  <div *ngIf="dayOfWeek">
+    <h4>The day of the week is: {{ dayOfWeek }}</h4>
+  </div>
+
+  <div *ngIf="!dayOfWeek && selectedDate === ''">
+    <p>Please enter a valid date.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -54,6 +54,7 @@ import {VowelscounterComponent} from "./components/vowelscounter/vowelscounter.c
 import {SquarerootcalculatorComponent} from "./components/squarerootcalculator/squarerootcalculator.component";
 import {GradecalculatorComponent} from "./components/gradecalculator/gradecalculator.component";
 import {PercentagecalculatorComponent} from "./components/percentagecalculator/percentagecalculator.component";
+import {DayofweekfinderComponent} from "./components/dayofweekfinder/dayofweekfinder.component";
 
 
 const routes: Routes = [
@@ -103,6 +104,7 @@ const routes: Routes = [
   { path: 'squarerootcalculator', component: SquarerootcalculatorComponent },
   { path: 'gradecalculator', component: GradecalculatorComponent },
   { path: 'percentagecalculator', component: PercentagecalculatorComponent },
+  { path: 'dayofweekfinder', component: DayofweekfinderComponent },
 
 
 ];
@@ -164,6 +166,7 @@ const routes: Routes = [
     SquarerootcalculatorComponent,
     GradecalculatorComponent,
     PercentagecalculatorComponent,
+    DayofweekfinderComponent,
 
   ],
 

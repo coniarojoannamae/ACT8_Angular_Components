@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Replacer</title>
+</head>
+<body>
+<div class="text-replacer">
+  <h2>Text Replacer</h2>
+
+  <label for="text">Original Text:</label> <br>
+  <textarea id="text" rows="4" [(ngModel)]="originalText" placeholder="Enter your text here"></textarea><br>
+
+  <label for="wordToReplace">Word to Replace:</label><br>
+  <input type="text" id="wordToReplace" [(ngModel)]="wordToReplace" placeholder="Word to replace" /><br>
+
+  <label for="replacementWord">Replacement Word:</label><br>
+  <input type="text" id="replacementWord" [(ngModel)]="replacementWord" placeholder="Replacement word" /><br><br>
+
+  <button (click)="replaceText()">Replace</button><br><br>
+
+  <div *ngIf="modifiedText !== null">
+    <h4>Modified Text:</h4>
+    <p>{{ modifiedText }}</p>
+  </div>
+</div>
+</body>
+</html>

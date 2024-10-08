@@ -56,6 +56,7 @@ import {GradecalculatorComponent} from "./components/gradecalculator/gradecalcul
 import {PercentagecalculatorComponent} from "./components/percentagecalculator/percentagecalculator.component";
 import {DayofweekfinderComponent} from "./components/dayofweekfinder/dayofweekfinder.component";
 import {DiscountcalculatorComponent} from "./components/discountcalculator/discountcalculator.component";
+import {TextreplacerComponent} from "./components/textreplacer/textreplacer.component";
 
 
 const routes: Routes = [
@@ -107,6 +108,7 @@ const routes: Routes = [
   { path: 'percentagecalculator', component: PercentagecalculatorComponent },
   { path: 'dayofweekfinder', component: DayofweekfinderComponent },
   { path: 'discountcalculator', component: DiscountcalculatorComponent },
+  { path: 'textreplacer', component: TextreplacerComponent },
 
 
 ];
@@ -170,6 +172,7 @@ const routes: Routes = [
     PercentagecalculatorComponent,
     DayofweekfinderComponent,
     DiscountcalculatorComponent,
+    TextreplacerComponent
 
   ],
 

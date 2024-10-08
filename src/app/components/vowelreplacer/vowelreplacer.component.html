@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vowel Replacer</title>
+</head>
+<body>
+<div class="vowel-replacer">
+  <h2>Vowel Replacer</h2>
+  <label for="text">Original Text:</label><br>
+  <textarea id="text" rows="4" [(ngModel)]="inputText" placeholder="Enter your text here"></textarea><br>
+
+  <label for="replacementChar">Replacement Character:</label><br>
+  <input type="text" id="replacementChar" [(ngModel)]="replacementChar" maxlength="1" placeholder="Enter a character" /><br><br>
+
+  <button (click)="replaceVowels()">Replace Vowels</button><br>
+
+  <div *ngIf="modifiedText !== null">
+    <h4>Modified Text:</h4>
+    <p>{{ modifiedText }}</p>
+  </div>
+
+  <div *ngIf="replacementChar.length !== 1 && modifiedText === null">
+    <p>Please enter a valid single replacement character.</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -57,6 +57,7 @@ import {PercentagecalculatorComponent} from "./components/percentagecalculator/p
 import {DayofweekfinderComponent} from "./components/dayofweekfinder/dayofweekfinder.component";
 import {DiscountcalculatorComponent} from "./components/discountcalculator/discountcalculator.component";
 import {TextreplacerComponent} from "./components/textreplacer/textreplacer.component";
+import {VowelreplacerComponent} from "./components/vowelreplacer/vowelreplacer.component";
 
 
 const routes: Routes = [
@@ -109,8 +110,7 @@ const routes: Routes = [
   { path: 'dayofweekfinder', component: DayofweekfinderComponent },
   { path: 'discountcalculator', component: DiscountcalculatorComponent },
   { path: 'textreplacer', component: TextreplacerComponent },
-
-
+  { path: 'vowelreplacer', component: VowelreplacerComponent },
 ];
 
 @NgModule({
@@ -172,8 +172,8 @@ const routes: Routes = [
     PercentagecalculatorComponent,
     DayofweekfinderComponent,
     DiscountcalculatorComponent,
-    TextreplacerComponent
-
+    TextreplacerComponent,
+    VowelreplacerComponent
   ],
 
   bootstrap: [

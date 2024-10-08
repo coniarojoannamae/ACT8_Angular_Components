@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discount Calculator</title>
+</head>
+<body>
+<div class="discount-calculator">
+  <h2>Discount Calculator</h2>
+  <label for="price">Original Price:</label><br>
+  <input type="number" id="price" [(ngModel)]="originalPrice" placeholder="Enter original price" /><br>
+  <label for="discount">Discount Percentage:</label><br>
+  <input type="number" id="discount" [(ngModel)]="discountPercentage" placeholder="Enter discount percentage" /><br><br>
+  <button (click)="calculateDiscount()">Calculate Final Price</button><br><br>
+
+  <div *ngIf="finalPrice !== null">
+    <h4>Final Price: {{ finalPrice | currency }}</h4>
+  </div>
+
+  <div *ngIf="finalPrice === null && (originalPrice < 0 || discountPercentage < 0)">
+    <p>Please enter valid values for price and discount percentage.</p>
+  </div>
+</div>
+
+
+</body>
+</html>

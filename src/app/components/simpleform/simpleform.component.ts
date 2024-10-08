@@ -6,13 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './simpleform.component.css'
 })
 export class SimpleformComponent {
-
   name: string = " ";
   email: string = " ";
   resultName: string = " ";
   resultEmail: string = " ";
-
-
   show() {
     this.resultName = this.name;
     console.log(this.name);
@@ -20,5 +17,4 @@ export class SimpleformComponent {
     console.log(this.email);
 
   }
-
 }

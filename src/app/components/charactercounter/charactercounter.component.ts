@@ -12,5 +12,4 @@ export class CharactercounterComponent {
   updateCharacterCount() {
     this.characterCount = this.inputText.length;
   }
-
 }

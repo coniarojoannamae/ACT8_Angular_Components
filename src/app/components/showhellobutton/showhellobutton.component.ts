@@ -11,6 +11,4 @@ export class ShowhellobuttonComponent {
   click(){
     this.message = "Hello World!";
   }
-
-
 }

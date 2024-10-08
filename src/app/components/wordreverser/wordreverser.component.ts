@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class WordreverserComponent {
   inputWord: string = '';
   reversedWord: string = '';
-
   reverseWord() {
     this.reversedWord = this.inputWord.split('').reverse().join('');
   }

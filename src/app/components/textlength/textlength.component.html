@@ -6,12 +6,10 @@
   <title>Text Length Calculator</title>
 </head>
 <body>
+   <h2>String Length Calculator</h2>
+    <input type="text" placeholder="Enter your string here" [(ngModel)]="inputString" />
+    <button (click)="GetLength()">Get Length</button>
 
-<h2>String Length Calculator</h2>
-<input type="text" placeholder="Enter your string here" [(ngModel)]="inputString" />
-<button (click)="GetLength()">Get Length</button>
-
-<div>Result: {{result}}</div>
-
+    <div>Result: {{result}}</div>
 </body>
 </html>

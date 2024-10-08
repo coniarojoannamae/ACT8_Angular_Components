@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class EvenoddcheckerComponent {
   number: number | null = null;
   result: string = '';
-
   checkEvenOdd(): void {
     if (this.number !== null) {
       if (this.number % 2 === 0) {

@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './userage.component.css'
 })
 export class UserageComponent {
-
   birthYear: number | null = null;
   age: number | null = null;
 

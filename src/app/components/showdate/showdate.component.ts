@@ -12,5 +12,4 @@ export class ShowdateComponent {
     const now = new Date();
     this.currentDateTime = now.toLocaleString();  // Formats the date and time as a readable string
   }
-
 }

@@ -10,7 +10,6 @@ export class DisplaynameComponent {
    name: string = " ";
    result: string = " ";
 
-
   show() {
     this.result = this.name;
     console.log(this.name);

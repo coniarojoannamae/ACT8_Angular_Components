@@ -11,8 +11,5 @@ export class TextlengthComponent {
 
   GetLength(){
     this.result = this.inputString.length;
-
   }
-
-
 }

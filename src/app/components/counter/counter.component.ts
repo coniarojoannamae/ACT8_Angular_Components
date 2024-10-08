@@ -6,11 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './counter.component.css'
 })
 export class CounterComponent {
-
   number: number = 0;
   result: number = 0;
-
-
   show() {
     this.result = this.number;
     console.log(this.number);
